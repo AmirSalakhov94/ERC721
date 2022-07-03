@@ -6,16 +6,18 @@ import '@nomiclabs/hardhat-ethers';
 import 'dotenv/config';
 import '@nomiclabs/hardhat-etherscan';
 
+import './tasks/mint';
+
 module.exports = {
   paths: {
     artifacts: './artifacts',
     cache: './cache',
     sources: './contracts',
-    tests: './tests',
+    tests: './tests'
   },
   solidity: "0.8.15",
-  
-    networks: {
+
+  networks: {
       rinkeby: {
         url: process.env.DEPLOY_KEY_RINKEBY,
         accounts: [process.env.DEPLOY_ACC_RINKEBY],
