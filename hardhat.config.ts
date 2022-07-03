@@ -16,9 +16,6 @@ module.exports = {
   solidity: "0.8.15",
   
     networks: {
-      hardhat: {
-        chainId: 1337,
-      },
       rinkeby: {
         url: process.env.DEPLOY_KEY_RINKEBY,
         accounts: [process.env.DEPLOY_ACC_RINKEBY],
